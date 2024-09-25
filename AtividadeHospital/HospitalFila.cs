@@ -57,6 +57,31 @@ namespace AtividadeHospital
                 Console.WriteLine("Fila cheia! Não é possível incluir mais pacientes.");
             }
         }
+        public void ListarFila()
+        {
+            Console.WriteLine("Fila de pacientes:");
+            for (int i = 0; i < fimFila; i++)
+            {
+                Console.WriteLine($"{i+1}.{filaPacientes[i]}");
+            }
+        }
+        public void AtenderPaciente()
+        {
+            if(fimFila > 0)
+            {
+                Console.WriteLine($"Atendendo o paciente {filaPacientes[0].Nome}...");
+                for (int i = 0; i < fimFila - 1; i++)
+                {
+                    filaPacientes[i] = filaPacientes[i + 1];
+                }
+                filaPacientes[fimFila - 1] = null;
+                fimFila--;
+            }
+            else
+            {
+                Console.WriteLine("Não há pacientes na fila para atender.");
+            }
+        }
     }
 }
     

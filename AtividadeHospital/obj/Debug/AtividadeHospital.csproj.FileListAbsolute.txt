@@ -1,0 +1,2 @@
+C:\Users\Tecnico\Desktop\Atividade_jefferson\AtividadeHospital\obj\Debug\AtividadeHospital.csproj.AssemblyReference.cache
+C:\Users\Tecnico\Desktop\Atividade_jefferson\AtividadeHospital\obj\Debug\AtividadeHospital.csproj.CoreCompileInputs.cache
